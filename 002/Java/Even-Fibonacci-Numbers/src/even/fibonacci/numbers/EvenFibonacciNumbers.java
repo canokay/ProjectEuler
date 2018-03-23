@@ -21,16 +21,15 @@ public class EvenFibonacciNumbers {
         1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
         By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
      */
-        int y= 1;
-        int z= 1;
-        int toplam = 0;
-        for (int i = 1; i <= 4000000; i++) {
-            toplam +=z;
-            System.out.println(z);
-            y=z;
-            z = y+z;
-        }
-        System.out.println(toplam);       
+        int n1=0,n2=1,n3,i;  
+  
+        for(i=1;i<=4000000;i++) 
+        {  
+         n3=n1+n2;  
+         System.out.println(" "+n3);  
+         n1=n2;  
+         n2=n3;  
+        }  
     }
     
-}
+}          
