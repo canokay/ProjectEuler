@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Can Okay Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+      position: relative; 
+  }
+  #projecteuler {padding-top:100px;padding-bottom: 40px;height:650px;color: #000; Text-align:center;background-color: #fff;}
+  
+        #main {
+            height: 800px;
+            margin-top: 110px;
+        }
+
+        #secnav {
+            top: 50px;
+        }
+
+        .myclass {
+            top: 330px !important;
+        }
+    </style>
+    <script>
+        $(function () {
+            var flag = true;
+
+            $("button.navbar-toggle").click(function () {
+                if (flag) {
+                    $("#secnav").addClass("myclass");
+                    flag = false;
+                } else {
+                    $("#secnav").removeClass("myclass");
+                    flag = true;
+                }
+            })
+        })
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mynav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Can Okay</a>
+                </div>
+  
+                <div class="collapse navbar-collapse mynav" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#section6">Github</a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <nav id="secnav" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#">Repostories: </a>
+                <div class="collapse navbar-collapse mynav" id="myNavbar1">
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Android <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 4-1</a></li>
+                                <li><a href="#">Page 4-2</a></li>
+                                <li><a href="#">Page 4-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">iOS <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 4-1</a></li>
+                                <li><a href="#">Page 4-2</a></li>
+                                <li><a href="#">Page 4-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>  
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">React Native <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 4-1</a></li>
+                                <li><a href="#">Page 4-2</a></li>
+                                <li><a href="#">Page 4-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                     
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="active dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Algorithms <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="#">Project Euler</a></li>
+                                <li><a href="#">Algorithms</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Python <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 4-1</a></li>
+                                <li><a href="#">Page 4-2</a></li>
+                                <li><a href="#">Page 4-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                     <ul class="nav navbar-nav navbar-right">
+                         <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Tutorials <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML Tutorial</a></li>
+                                <li><a href="#">CSS Tutorial</a></li>
+                                <li><a href="#">JavaScript Tutorial</a></li>
+                                <li><a href="#">Java Tutorial</a></li>
+                                <li><a href="#">Android Tutorial</a></li>
+                                <li><a href="#">iOS Tutorial</a></li>
+                                <li><a href="#">React Native Tutorial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <div id="projecteuler" class="container-fluid">
+            <h1> Project Euler</h1>
+            <p>
+                <a href="https://projecteuler.net/">https://projecteuler.net/ </a> Sitesindeki Soruların <b>Python veya Java</b> algoritmaları repostory'si.
+            </p>
+            <div class="container-fluid">
+                <img src="img/java-logo.png" height="50px" width="50px">
+                <img src="img/python-logo.png" height="50px" width="50px">
+            </div>
+            <p>
+                
+            </p>
+            <input type="submit" class="btn btn-success" onClick="window.open('https://github.com/canokay/ProjectEuler');" value="Repostory'e Git">
+            
+            
+        </div>
+    </form>
+</body>
+</html>
