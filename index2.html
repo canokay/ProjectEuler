@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Can Okay / ProjectEuler - Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+      position: relative; 
+  }
+  #projecteuler {padding-top:100px;padding-bottom: 40px;height:650px;color: #000; Text-align:center;background-color: #fff; min-height: 1000px;}
+  
+        #main {
+            height: 800px;
+            margin-top: 110px;
+        }
+        #secnav {
+            top: 50px;
+        }
+        .myclass {
+            top: 330px !important;
+        }
+        
+         .github{
+          background:#24292E;
+          color: #D1D5DA;   
+      }
+        
+        .repomenu{
+          background:#24292E;
+          color: #D1D5DA;   
+          
+      }
+        
+        /* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+footer a {
+    color: #f5f5f5;
+}
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+  
+    </style>
+    <script>
+        $(function () {
+            var flag = true;
+            $("button.navbar-toggle").click(function () {
+                if (flag) {
+                    $("#secnav").addClass("myclass");
+                    flag = false;
+                } else {
+                    $("#secnav").removeClass("myclass");
+                    flag = true;
+                }
+            })
+        })
+    </script>
+    
+       
+<script>
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mynav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://canokay.github.io/">Can Okay</a>
+                </div>
+  
+                <div class="collapse navbar-collapse mynav" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://canokay.github.io/#bio">Bio</a></li>
+                        <li><a href="https://canokay.github.io/#github">Github</a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+                 <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mynav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    
+                <a class="navbar-brand" href="#">Repostories: </a>
+                     </div>
+                <div class="collapse navbar-collapse mynav" id="myNavbar1">
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Android <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://canokay.github.io/AndroidFirstApp">First App</a></li>
+                                <li><a href="http://canokay.github.io/Android-LayoutsExample">Layouts Example</a></li>
+                                <li><a href="http://canokay.github.io/Android-CatchTheEric">CatchTheEric</a></li>
+                                <li><a href="http://canokay.github.io/Android-CanOkaySplashScreen-v1">CanOkay Splash Screen</a></li>
+                                <li><a href="http://canokay.github.io/AndroidDynamicSplashScreen">Android Dynamic Splash Screen</a></li>
+                                <li><a href="http://canokay.github.io/FirebaseAuthenticationExample">Firebase Authentication</a></li>
+                                <li><a href="http://canokay.github.io/Android-FirebaseStorageExample">Firebase Storage</a></li>     
+                            </ul>
+                        </li>
+                    </ul>    
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">iOS <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://canokay.github.io/iOS-First-App">First App</a></li>
+                                <li><a href="http://canokay.github.io/iOS-First-Layout">First Layout</a></li>
+                                <li><a href="http://canokay.github.io/iOS-First-Segues">First Segues</a></li>
+                            </ul>
+                        </li>
+                    </ul>  
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">React Native <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://canokay.github.io/ReactNative-FirstApp">FirstApp</a></li>
+                                <li><a href="http://canokay.github.io/ReactNative-DatabaseApp">JSON Database App</a></li>
+                                <li><a href="http://canokay.github.io/ReactNative-FirebaseAuthenticationExample">Firebase Authentication</a></li>
+                                <li><a href="http://canokay.github.io/ReactNative-Notlari">ReactNative Notlari</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                     
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="active dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Algorithms <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://canokay.github.io/ProjectEuler/">Project Euler</a></li>
+                                <li><a href="https://canokay.github.io/Algorithms/">Algorithms</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    
+                    <ul id="mynav2" class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Python <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://canokay.github.io/Python-Notlari">Python Notlari</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                     <ul class="nav navbar-nav navbar-right">
+                         <li class="dropdown">
+                            <a class=" dropdown-toggle" data-toggle="dropdown" href="#">Tutorials <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://canokay.github.io/html-notlari">HTML Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/css-notlari">CSS Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/JavaScript-Notlari">JavaScript Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/php-notlari">PHP Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/java-notlari">Java Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/android-notlari">Android Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/iOS-notlari">iOS Tutorial</a></li>
+                                <li><a href="https://canokay.github.io/React-Native-notlari">React Native Tutorial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+                
+        </nav>
+        
+
+        <div id="projecteuler" class="container-fluid">
+            <h1> Project Euler</h1>
+            <p>
+                <a href="https://projecteuler.net/">https://projecteuler.net/ </a> Sitesindeki Soruların <b>Python veya Java</b> algoritmaları repostory'si.
+            </p>
+            <div class="container-fluid">
+                <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/java-logo.png" height="50px" width="50px">
+                <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/python-logo.png" height="50px" width="50px">
+            </div>
+            <p>
+                
+            </p>
+            <input type="submit" class="btn btn-success" onClick="window.open('https://github.com/canokay/ProjectEuler');" value="Repostory'e Git">
+            
+            
+        </div>
+   
+    <!-- Footer -->
+<footer class="text-center github">
+  <a class="up-arrow" href="#" data-toggle="tooltip" title="Yukarı">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Powered By  <a href="https://canokay.github.io" data-toggle="tooltip" title="Can Okay">Can Okay</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+<!-- Footer End -->
+</body>
+</html>
